@@ -1,8 +1,8 @@
 plugins {
     java
     `maven-publish`
-    id("io.papermc.paperweight.userdev") version "1.7.4"
-    id("xyz.jpenilla.run-paper") version "2.3.1"
+    id("io.papermc.paperweight.userdev") // Version controlled by main build.gradle.kts
+    id("xyz.jpenilla.run-paper") // Version controlled by main build.gradle.kts
 }
 
 fun prop(name: String) = project.rootProject.property(name) as String
