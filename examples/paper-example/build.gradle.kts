@@ -15,16 +15,16 @@ dependencies {
     implementation(project(":api"))
     implementation(project(":jetty"))
 
-    implementation(project(":javalin")) {
-        isTransitive = false
-    }
-    implementation("io.javalin:javalin:6.3.0")
+    //implementation(project(":javalin")) {
+    //    isTransitive = false
+    //}
+    //implementation("io.javalin:javalin:6.3.0")
 
     implementation(project(":spring")) {
         isTransitive = false
     }
-    implementation("org.springframework.boot:spring-boot-starter-web:3.3.5")
-    implementation("org.springframework.boot:spring-boot-starter-jetty:3.3.5")
+    compileOnly("org.springframework.boot:spring-boot-starter-web:3.3.5")
+    compileOnly("org.springframework.boot:spring-boot-starter-jetty:3.3.5")
 
     compileOnly("io.netty:netty-all:4.1.97.Final")
     compileOnly("org.slf4j:slf4j-api:1.7.30")
